@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Haven - Explore Your Artistic Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Art Haven</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>EXPLORE YOUR<br>ARTISTIC JOURNEY</h1>
+        <div class="hero-image">
+            <img src="Images/Beautiful floral art arrangement.avif" alt="Beautiful floral art arrangement">
+        </div>
+        <a href="#" class="btn">Discover Now</a>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="section">
+        <h2>Our Story</h2>
+        <div class="divider"></div>
+        <p>Art Haven was founded with a passion for celebrating creativity and cultural heritage. Our journey began with a vision to bring diverse art forms to enthusiasts worldwide, fostering a community of inspiration and innovation.</p>
+        <div class="section-image">
+            <img src="Images/Classical art painting.avif" alt="Classical art painting">
+        </div>
+        <a href="#" class="btn btn-outline">Learn More</a>
+    </section>
+
+    <!-- Perfect Place Section -->
+    <section class="section">
+        <h2>Perfect Place</h2>
+        <h2 class="white">To Enjoy Art</h2>
+        <div class="divider"></div>
+        <p>Immerse yourself in a world of art with our curated galleries and exhibitions. From paintings to sculptures, find your inspiration in a welcoming environment designed for art lovers.</p>
+        <div class="section-image">
+            <img src="Images/Art gallery interior.avif" alt="Art gallery interior">
+        </div>
+        <a href="#" class="btn btn-outline">Learn More</a>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Images/Painting.jpg" alt="Painting">
+                <h3>Painting</h3>
+                <p>Canvas Art</p>
+                <p>Oil Colors</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/Architecture.jpg" alt="Sculpture">
+                <h3>Sculpture</h3>
+                <p>Marble</p>
+                <p>Bronze</p>
+            </div>
+            <div class="product-card">
+                <img src="Images/Sculpture.jpg" alt="Print">
+                <h3>Print</h3>
+                <p>Digital Art</p>
+                <p>Posters</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p class="about-description">Art Haven is dedicated to promoting artistic expression and education. Our team of experts curates a rich collection of artworks and provides resources for aspiring artists and collectors alike.</p>
+            
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Services We Offer</h3>
+                    <p>We provide art workshops, gallery tours, and custom framing services to enhance your artistic experience and preserve your collection.</p>
+                </div>
+                <div class="about-item" id="contact">
+                    <h3>Contact Info</h3>
+                    <p>Reach out to us for inquiries or to schedule a visit. We are here to assist you on your art journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+            <p>Copyright © Art Haven 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
